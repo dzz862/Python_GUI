@@ -83,43 +83,6 @@ class Form(QWidget):
             self.ply_timerflag = False
             self.ply_timer.stop()
             self.ply_btn.setText('Start Play')
-        
-
-#class Point(Structure):
-# _fields_ = [("x", c_ulong),("y", c_ulong)]
-#def get_mouse_point():
-# po = Point()
-# windll.user32.GetCursorPos(byref(po))
-# return int(po.x), int(po.y)
-#def mouse_click(x=None,y=None):
-# if not x is None and not y is None:
-#     mouse_move(x,y)
-#     time.sleep(0.05)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-#def mouse_dclick(x=None,y=None):
-# if not x is None and not y is None:
-#     mouse_move(x,y)
-#     time.sleep(0.05)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-# win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-#def mouse_move(x,y):
-# windll.user32.SetCursorPos(x, y)
-#def key_input(str=''):
-# for c in str:
-#     win32api.keybd_event(VK_CODE[c],0,0,0)
-#     win32api.keybd_event(VK_CODE[c],0,win32con.KEYEVENTF_KEYUP,0)
-#     time.sleep(0.01)
-
-###if __name__ == "__main__":
-#while 1:
-#    mouse_click(800,600)
-#    time.sleep(5)
-#    str = 'hello'
-#    key_input(str)
-
 
 if __name__ == '__main__':
 
